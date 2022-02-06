@@ -4,3 +4,4 @@ Lib
 .idea
 Script
 pyenv.cfg
+*.sqlite3

@@ -79,8 +79,8 @@ class DeleteMessageAPIView(APIView):
                 message_id = serilizer_id.data.get('message_id')
             else: return Response({'status': 'Bad Request.'},
                                   status=status.HTTP_400_BAD_REQUEST)
-            Messages.objects.filter(id=message_id).delete()
-
+            deleted = Messages.objects.filter(id=message_id).delete()
+            
             return Response({'staus': "ok"},
                             status=status.HTTP_200_OK)
 

@@ -5,3 +5,4 @@ Lib
 Script
 pyenv.cfg
 *.sqlite3
+message/migrations/*
